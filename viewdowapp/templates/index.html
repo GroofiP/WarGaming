@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка файла</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="wrapper">
+    <div>
+
+        <table>
+            <tr>
+                <th>Слово</th>
+                <th>tf</th>
+                <th>idf</th>
+            </tr>
+            {% for word in words %}
+                <tr>
+                    <td>{{ word.word }}</td>
+                    <td>{{ word.tf }}</td>
+                    <td>{{ word.idf }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+    <div class="new_category_form">
+        <form class="form-horizontal" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input class="form-control" type="submit" value="Отправить">
+        </form>
+    </div>
+</div>
+</body>
+</html>

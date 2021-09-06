@@ -1,0 +1,59 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_chat {
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-size: 24px;
+
+}
+
+.form-horizontal{
+    background: border-box ;
+    border: 1px solid black ;
+    padding: 10px 0 10px 5px;
+    margin-right: 400px;
+}
+
+.new_category_form {
+    text-align: left;
+    font-size: 36px;
+
+}
+
+textarea {
+    margin: 0;
+    width: 350px;
+    height: 40px;
+}
+
+label {
+    vertical-align: top;
+}
+
+.form-control {
+    font-size: 24px;
+}
+
+.link_auth{
+    padding-top: 20px ;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    padding-left: 200px;
+    padding-right: 200px;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.adr_auth {
+    padding-top: 20px;
+}
